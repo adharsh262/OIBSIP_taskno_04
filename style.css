@@ -1,0 +1,64 @@
+.rreal {
+    border-radius: 30px;
+    width: 300px;
+    padding: 3px;
+    margin: 10px;
+}
+
+
+.bigbox {
+    background-image: linear-gradient(#66ffff,#0099ff,#e580ff, #ff99ff);
+    height: 100vh;
+    width: 100vw;
+}
+.hhead {
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+    padding-top: 20px;
+    font-weight: 600;
+}
+.patra {
+    text-align: left;
+}
+.dshj {
+    color: azure;
+}
+.btxbutton {
+    background-image: linear-gradient(to right,#66ffff,#0099ff,#e580ff, #ff99ff);
+    border-width: 0px;
+    color: white;
+    width: 30%;
+    border-radius: 20px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.fontcolor {
+    color: azure;
+}
+.msgtext {
+    background-color: azure;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: 20px;
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+.labeltext {
+    color: azure;
+    margin: 10px;
+    padding-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.labelinput {
+    margin: 10px;
+    width: auto;
+    text-align: left;
+}
+.vfrhjb {
+    height: 600px;
+    width: 500px;
+
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+    <div class="bigbox">
+        {% for message in messages  %}
+        <div class="msgtext fixed-bottom text-center">
+            <div class="alert alert-{{message.tage}} alert-dismissible fade show" role="alert">
+                <strong>Message :</strong>{{message}}
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+        
+            </div>
+        </div>
+        
+        
+        {% endfor %}
+
+    
+    <div class="fluid-container">
+        <div class="row">
+            
+           <div class="col-12">
+            <h1 class="text-center hhead">REGISTER </h1>
+           </div>
+           <div class="d-none col-lg-7 d-lg-inline">
+                <img src="https://image.freepik.com/free-vector/register-here-neon-sign_104045-244.jpg" alt="" class="rreal vfrhjb w-100 ml-5">
+           </div>
+           <div class="col-12 col-lg-5 ">
+
+            <form action="/signup" method="post">
+                {% csrf_token %}
+                <div class="d-flex flex-row m-5 justify-content-center">
+                    <label for="userName" class="labeltext">Username :</label>
+                    <input type="text" name="userName" id="userName" placeholder="Create a UserName" class="form-control labelinput" required><br>
+        
+                </div>
+                <div class="d-flex flex-row m-3 justify-content-center">
+                    <label for="useFName" class="labeltext">First Name :</label>
+                    <input type="text" name="FName" id="useFName" placeholder="Enter Your First Name" class="form-control labelinput" required><br>
+                </div>
+        
+                <div class="d-flex flex-row m-3 justify-content-center">
+                    <label for="LName" class="labeltext">Last Name :</label>
+                    <input type="text" name="LName" id="LName" placeholder="Enter Your Last Name" class="form-control labelinput" required><br>
+                </div>
+        
+                <div class="d-flex flex-row m-3 justify-content-center">
+                    <label for="pass1" class="labeltext">Password :</label>
+                    <input type="password" name="pass1" id="pass1" placeholder="Create a Password" class="form-control labelinput" required><br>
+                </div>
+        
+                <div class="d-flex flex-row m-3 justify-content-center">
+                    <label for="pass2" class="labeltext">Confirm <br> Password :</label>
+                    <input type="password" name="pass2" id="pass2" placeholder="Confirm a Password" class="form-control labelinput mt-3" required><br>
+                </div>
+        
+                
+        
+                
+        
+                
+        
+                
+        
+                <div class="text-center ">
+                    <button type="submit" class="text-center btxbutton m-4">SIGN UP </button>
+                </div>
+            </form>
+           </div>
+
+        </div>
+    </div>
+
+    </div>
+    <script src=""></script>
+</body>
+</html>
